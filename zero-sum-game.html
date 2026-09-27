@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Games of Value and Power: Decoupling Layers of Value Creation and Distribution</title>
   
-  <!-- MathJax Configuration: Safe mode without bare '$' delimiter to prevent currency symbol collision -->
+  <!-- MathJax Configuration: Configured strictly with \( ... \) for inline math to prevent collision with currency '$' symbols -->
   <script>
     window.MathJax = {
       tex: {
@@ -334,41 +334,126 @@
           Stripped of rhetorical spin, every conceivable interaction—commercial, social, political, or ecological—can be categorized into one of three macro-level mathematical regimes based strictly on its net aggregate impact on the total resource pool:
         </p>
 
-        <!-- DIAGRAM 1: THE TWO-AXIS DECOUPLING MATRIX -->
+        <!-- DIAGRAM 1: THE TWO-AXIS DECOUPLING MATRIX (REVISED & PERFECTED) -->
         <div class="visual-container">
-          <svg viewBox="0 0 760 380" style="width: 100%; max-width: 720px; height: auto;" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="740" height="360" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
-            <line x1="380" y1="30" x2="380" y2="350" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4"/>
-            <line x1="50" y1="190" x2="710" y2="190" stroke="#94a3b8" stroke-width="2"/>
+          <svg viewBox="0 0 900 580" style="width: 100%; max-width: 900px; height: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;" xmlns="http://www.w3.org/2000/svg">
             
-            <text x="700" y="180" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="end">Aggregate Pie Grows (+Sum) &rarr;</text>
-            <text x="60" y="180" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569">&larr; Aggregate Pie Shrinks (-Sum)</text>
-            <text x="390" y="50" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569">Equitable Distribution (Win-Win)</text>
-            <text x="390" y="340" font-family="sans-serif" font-size="12" font-weight="700" fill="#475569">Skewed / Predatory (Bully Takes All)</text>
+            <!-- Canvas Background -->
+            <rect x="0" y="0" width="900" height="580" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
 
-            <!-- Top Right: Positive Sum Win-Win -->
-            <rect x="400" y="50" width="290" height="120" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
-            <text x="415" y="75" font-family="sans-serif" font-size="14" font-weight="bold" fill="#065f46">Positive-Sum / True Win-Win</text>
-            <text x="415" y="98" font-family="sans-serif" font-size="11" fill="#047857">Macro: Pie Expands (&sum; &Delta;V &gt; 0)</text>
-            <text x="415" y="115" font-family="sans-serif" font-size="11" fill="#047857">Micro: All participants secure larger slices.</text>
-            <text x="415" y="140" font-family="sans-serif" font-size="10" font-style="italic" fill="#065f46">Ex: Bilateral trade, agricultural forward hedging.</text>
+            <!-- Background Quadrant Tints -->
+            <rect x="20" y="20" width="415" height="255" rx="8" fill="#f8fafc" />
+            <rect x="465" y="20" width="415" height="255" rx="8" fill="#f0fdf4" />
+            <rect x="20" y="305" width="415" height="255" rx="8" fill="#fef2f2" />
+            <rect x="465" y="305" width="415" height="255" rx="8" fill="#fffbeb" />
 
-            <!-- Bottom Right: Positive Sum Win-Lose -->
-            <rect x="400" y="210" width="290" height="120" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-            <text x="415" y="235" font-family="sans-serif" font-size="14" font-weight="bold" fill="#92400e">Positive-Sum / Win-Lose (The Bully)</text>
-            <text x="415" y="258" font-family="sans-serif" font-size="11" fill="#b45309">Macro: Pie Expands (&sum; &Delta;V &gt; 0)</text>
-            <text x="415" y="275" font-family="sans-serif" font-size="11" fill="#b45309">Micro: Bully extracts 120%, leaves others worse off.</text>
-            <text x="415" y="300" font-family="sans-serif" font-size="10" font-style="italic" fill="#92400e">Ex: Uncompensated offshoring, pack hunting alphas.</text>
+            <!-- Main Axes (X & Y) -->
+            <line x1="450" y1="30" x2="450" y2="550" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+            <line x1="30" y1="290" x2="870" y2="290" stroke="#94a3b8" stroke-width="2"/>
 
-            <!-- Bottom Left: Negative Sum Win-Lose -->
-            <rect x="70" y="210" width="290" height="120" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
-            <text x="85" y="235" font-family="sans-serif" font-size="14" font-weight="bold" fill="#991b1b">Negative-Sum / Win-Lose (Predator)</text>
-            <text x="85" y="258" font-family="sans-serif" font-size="11" fill="#b91c1c">Macro: Pie Shrinks (&sum; &Delta;V &lt; 0)</text>
-            <text x="85" y="275" font-family="sans-serif" font-size="11" fill="#b91c1c">Micro: Predator profits from systemic destruction.</text>
-            <text x="85" y="300" font-family="sans-serif" font-size="10" font-style="italic" fill="#991b1b">Ex: Vulture raiding, lion infanticide, war looting.</text>
+            <!-- Axis Titles / Direction Indicators -->
+            <text x="865" y="282" font-size="12" font-weight="700" fill="#334155" text-anchor="end">Macro: Pie Expands (+Sum) &rarr;</text>
+            <text x="35" y="282" font-size="12" font-weight="700" fill="#334155" text-anchor="start">&larr; Macro: Pie Shrinks (&minus;Sum)</text>
+            
+            <text x="450" y="22" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">&uarr; Symmetrical / Mutual Distribution</text>
+            <text x="450" y="572" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">&darr; Asymmetric / Exploitative Distribution (Power Dominates)</text>
 
-            <circle cx="380" cy="270" r="6" fill="#d97706"/>
-            <text x="370" y="275" font-family="sans-serif" font-size="11" font-weight="bold" fill="#d97706" text-anchor="end">Pure Zero-Sum (Win-Lose)</text>
+            <!-- QUADRANT 1: TOP-LEFT (NEGATIVE-SUM / LOSE-LOSE) -->
+            <g transform="translate(35, 35)">
+              <rect width="380" height="225" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+              <rect width="380" height="38" rx="8" fill="#fee2e2" />
+              <text x="15" y="24" font-size="14" font-weight="800" fill="#991b1b">Negative-Sum / Lose-Lose (Mutual Ruin)</text>
+              
+              <text x="15" y="62" font-size="12" font-weight="700" fill="#7f1d1d">Macro Impact:</text>
+              <text x="110" y="62" font-size="12" fill="#334155">Pie Shrinks Catastrophically (&sum; &Delta;V &lt; 0)</text>
+              
+              <text x="15" y="86" font-size="12" font-weight="700" fill="#7f1d1d">Distribution:</text>
+              <text x="110" y="86" font-size="12" fill="#334155">Mutual Loss / Universal Destruction</text>
+              
+              <text x="15" y="112" font-size="11.5" fill="#475569">Both sides expend more energy fighting or destroying</text>
+              <text x="15" y="128" font-size="11.5" fill="#475569">wealth than any surviving payoff can justify.</text>
+              
+              <line x1="15" y1="145" x2="365" y2="145" stroke="#fecaca" stroke-width="1"/>
+              <text x="15" y="165" font-size="11" font-weight="700" fill="#991b1b">Real-World Archetypes:</text>
+              <text x="15" y="185" font-size="11" font-style="italic" fill="#64748b">&bull; Full-scale wars of attrition &bull; Mutually Assured Destruction</text>
+              <text x="15" y="203" font-size="11" font-style="italic" fill="#64748b">&bull; Spiteful litigation (legal fees exceed asset value)</text>
+            </g>
+
+            <!-- QUADRANT 2: TOP-RIGHT (POSITIVE-SUM / WIN-WIN) -->
+            <g transform="translate(485, 35)">
+              <rect width="380" height="225" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+              <rect width="380" height="38" rx="8" fill="#dcfce7" />
+              <text x="15" y="24" font-size="14" font-weight="800" fill="#166534">Positive-Sum / True Win-Win</text>
+              
+              <text x="15" y="62" font-size="12" font-weight="700" fill="#14532d">Macro Impact:</text>
+              <text x="110" y="62" font-size="12" fill="#334155">Pie Expands Substantially (&sum; &Delta;V &gt; 0)</text>
+              
+              <text x="15" y="86" font-size="12" font-weight="700" fill="#14532d">Distribution:</text>
+              <text x="110" y="86" font-size="12" fill="#334155">Equitable Sharing / All Sides Gain</text>
+              
+              <text x="15" y="112" font-size="11.5" fill="#475569">New wealth, efficiency, or risk reduction is created</text>
+              <text x="15" y="128" font-size="11.5" fill="#475569">such that every participant exceeds their baseline.</text>
+              
+              <line x1="15" y1="145" x2="365" y2="145" stroke="#bbf7d0" stroke-width="1"/>
+              <text x="15" y="165" font-size="11" font-weight="700" fill="#166534">Real-World Archetypes:</text>
+              <text x="15" y="185" font-size="11" font-style="italic" fill="#64748b">&bull; Voluntary trade &bull; Scientific discovery &bull; Tech innovation</text>
+              <text x="15" y="203" font-size="11" font-style="italic" fill="#64748b">&bull; Agricultural hedging (trading variance for certainty)</text>
+            </g>
+
+            <!-- QUADRANT 3: BOTTOM-LEFT (NEGATIVE-SUM / WIN-LOSE) -->
+            <g transform="translate(35, 320)">
+              <rect width="380" height="225" rx="8" fill="#ffffff" stroke="#f87171" stroke-width="1.5"/>
+              <rect width="380" height="38" rx="8" fill="#fee2e2" />
+              <text x="15" y="24" font-size="14" font-weight="800" fill="#b91c1c">Negative-Sum / Win-Lose (The Predator)</text>
+              
+              <text x="15" y="62" font-size="12" font-weight="700" fill="#991b1b">Macro Impact:</text>
+              <text x="110" y="62" font-size="12" fill="#334155">Pie Shrinks (&sum; &Delta;V &lt; 0)</text>
+              
+              <text x="15" y="86" font-size="12" font-weight="700" fill="#991b1b">Distribution:</text>
+              <text x="110" y="86" font-size="12" fill="#334155">Predator Wins; Society/Victims Bear Ruin</text>
+              
+              <text x="15" y="112" font-size="11.5" fill="#475569">The predator extracts a private positive payoff by</text>
+              <text x="15" y="128" font-size="11.5" fill="#475569">destroying a far larger pool of collective wealth.</text>
+              
+              <line x1="15" y1="145" x2="365" y2="145" stroke="#fecaca" stroke-width="1"/>
+              <text x="15" y="165" font-size="11" font-weight="700" fill="#b91c1c">Real-World Archetypes:</text>
+              <text x="15" y="185" font-size="11" font-style="italic" fill="#64748b">&bull; Vulture corporate raiding (strip $500M firm for $100M)</text>
+              <text x="15" y="203" font-size="11" font-style="italic" fill="#64748b">&bull; Lion pride infanticide &bull; War plunder &amp; territorial looting</text>
+            </g>
+
+            <!-- QUADRANT 4: BOTTOM-RIGHT (POSITIVE-SUM / WIN-LOSE) -->
+            <g transform="translate(485, 320)">
+              <rect width="380" height="225" rx="8" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+              <rect width="380" height="38" rx="8" fill="#fef3c7" />
+              <text x="15" y="24" font-size="14" font-weight="800" fill="#b45309">Positive-Sum / Win-Lose (The Bully)</text>
+              
+              <text x="15" y="62" font-size="12" font-weight="700" fill="#92400e">Macro Impact:</text>
+              <text x="110" y="62" font-size="12" fill="#334155">Pie Expands Overall (&sum; &Delta;V &gt; 0)</text>
+              
+              <text x="15" y="86" font-size="12" font-weight="700" fill="#92400e">Distribution:</text>
+              <text x="110" y="86" font-size="12" fill="#334155">Bully Captures &gt;100%; Weaker Parties Suffer</text>
+              
+              <text x="15" y="112" font-size="11.5" fill="#475569">Total production rises, but asymmetric leverage allows</text>
+              <text x="15" y="128" font-size="11.5" fill="#475569">one party to strip equity/wealth from junior partners.</text>
+              
+              <line x1="15" y1="145" x2="365" y2="145" stroke="#fde68a" stroke-width="1"/>
+              <text x="15" y="165" font-size="11" font-weight="700" fill="#b45309">Real-World Archetypes:</text>
+              <text x="15" y="185" font-size="11" font-style="italic" fill="#64748b">&bull; Uncompensated labor displacement &bull; Colonial extraction</text>
+              <text x="15" y="203" font-size="11" font-style="italic" fill="#64748b">&bull; Despotic wolf pack hunting (alphas eat, omegas starve)</text>
+            </g>
+
+            <!-- CENTERPIECE: THE ZERO-SUM CIRCLE (PARITY & ASYMMETRY ACCOMMODATED) -->
+            <circle cx="450" cy="290" r="78" fill="#0f172a" opacity="0.08"/>
+            <circle cx="450" cy="290" r="74" fill="#ffffff" stroke="#d97706" stroke-width="3.5"/>
+            <circle cx="450" cy="290" r="68" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+
+            <text x="450" y="254" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle" letter-spacing="0.08em">ZERO-SUM</text>
+            <rect x="408" y="260" width="84" height="20" rx="4" fill="#d97706"/>
+            <text x="450" y="274" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="monospace">&sum; &Delta;V = 0</text>
+            <text x="450" y="297" font-size="11" font-weight="800" fill="#0f172a" text-anchor="middle">CONSERVED VALUE</text>
+            <text x="450" y="313" font-size="10" font-weight="600" fill="#78350f" text-anchor="middle">Win-Lose or Neutral (Draw)</text>
+            <text x="450" y="328" font-size="9" font-style="italic" fill="#92400e" text-anchor="middle">Par Trade &bull; Chop Pot &bull; Stalemate</text>
+
           </svg>
           <div class="visual-caption">Figure 1.0: The Two-Axis Matrix separating Aggregate Value Generation (Macro) from Individual Value Capture (Micro).</div>
         </div>
@@ -380,7 +465,7 @@
               <span class="formula-badge">&sum; &Delta;V = 0</span>
             </div>
             <p>
-              The baseline resource volume is invariant. These activities are strictly non-productive and non-destructive in the aggregate. They are pure reallocation mechanisms. Every single unit of positive payoff enjoyed by an agent requires an identical, symmetrical deduction from the collective counterparties. <strong>It is inherently Win-Lose.</strong>
+              The baseline resource volume is invariant. These activities are strictly non-productive and non-destructive in the aggregate. They are pure reallocation or clearing mechanisms. Resources can either be shifted symmetrically (Win-Lose) or preserved at parity (Neutral Draw / Push). In all cases, no net wealth is materialized out of nothing.
             </p>
           </div>
 
